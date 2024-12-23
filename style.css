@@ -2,3 +2,30 @@ body{
     background-color:#000000;
     color: aliceblue;
 }
+
+#cover-photo{
+    height: 300px;
+    width: 100%;
+    object-fit:cover;
+}
+
+#profile-photo{
+    width:20%;
+    border-radius:50%;
+    border: 5px dashed cyan;
+    box-sizing:border-box;
+    border-style: ridge;
+    padding: 5px;
+    margin-left:40%;
+    margin-right:40%;
+}
+
+#profile-name-section{
+    text-align: center;
+}
+
+#profile-name{
+    display: block;
+    font-size:40px;
+    font-family:'Courier New', Courier, monospace
+}
