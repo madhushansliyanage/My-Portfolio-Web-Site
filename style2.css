@@ -1,0 +1,66 @@
+/* Whole web page */
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    user-select:none;
+    box-sizing: border-box;
+}
+.container{
+    /* background-color: #27d85f; */
+    width: 90%;
+    margin: auto;
+}
+
+
+
+/* Header */
+header {
+    background-color: tomato;
+    color: white;
+}
+/* Adding this clearfix to CSS */
+.container::after{
+    content:"";
+    clear:both;
+    display:table;
+}
+
+
+
+/* My Name */
+#MyName{
+    float: left;
+    /* background-color: #ff0000; */
+    max-width: max-content;
+    font-weight: bold;
+    font-size: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 10px 20px 10px 0px;
+}
+
+
+
+/* Navigation Menu */
+#nav-menu{
+    /* background-color: #c8fd1c; */
+    max-width: max-content;
+    float: right;
+    margin: 10px 0px;
+}
+#nav-menu ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+#nav-menu ul li{
+    display: inline-block;
+    padding:10px;
+}
+#nav-menu ul li a{
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+#nav-menu ul li a:hover{
+    background-color: #000000;
+}
