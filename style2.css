@@ -132,6 +132,15 @@ header {
 }
 
 
+/* About Section */
+#education{
+    text-align: center;
+}
+hr{
+    background-color: #fff;
+    width: 65%;
+}
+
 /* projects section */
 #project-cards {
     display: grid;
@@ -170,35 +179,4 @@ footer {
     color: white;
     padding: 50px 0px 15px 0px;
     text-align: center;
-}
-
-/* media queries */
-@media(max-width:1150px) {
-    #about-image {
-        float: none;
-        width: 100%;
-    }
-    #about-desciption {
-        float: none;
-        width: 100%;
-    }
-    #about {
-        margin-top: 60px;
-    }
-    #about-image img {
-        width: 300px;
-        height: 300px;
-    }
-    #about-desciption{
-        text-align: center;
-    }
-    #about-desciption h1 {
-        text-align: center;
-        font-size: 2em;
-    }
-}
-
-
-@media(max-width:854){
-    
 }
