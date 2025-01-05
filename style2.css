@@ -154,6 +154,9 @@ header {
     justify-items:center;
     align-items:center;
 }
+.contact-body img{
+    vertical-align:middle;
+}
 .contact-body a{
     text-decoration: none;
 }
