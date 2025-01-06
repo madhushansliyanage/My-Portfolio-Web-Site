@@ -1,1 +1,1 @@
-alert("Welcome to YASH's Profile")
+alert("Welcome to my Profile")
