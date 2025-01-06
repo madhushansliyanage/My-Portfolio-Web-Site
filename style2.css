@@ -153,10 +153,13 @@ hr{
     align-items:center;
 }
 .skill-grid>div{
-    background-color: #fff;
+    /* background-color: #fff; */
     padding:10px ;
 }
-
+.skill-grid > div > img {
+    vertical-align:middle;
+    margin-right: 10px;;
+}
 
 
 /* projects section */
@@ -181,7 +184,7 @@ hr{
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: minmax(40px, auto);
     grid-gap:10px;
-    justify-items: center;
+    justify-items: start;
     align-items: center;
 }
 .contact-body img {
