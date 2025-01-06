@@ -19,9 +19,10 @@ header~.container {
 }
 /* light-color-card div container */
 .light-color-card {
-    background-color: rgba(255, 99, 71, 0.305);
+    background-color: rgba(255, 99, 71, 0.075);
     padding: 20px;
     border-radius: 10px;
+    box-shadow:0px 0px 10px rgba(0, 0, 0, 0.575) ;
 }
 
 
@@ -97,11 +98,13 @@ header {
     border: 10px solid tomato;
     border-radius: 50%;
     box-sizing: border-box;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 #about-desciption {
     /* background-color: #3de43a; */
     width: 60%;
     float: right;
+    
 }
 #about-desciption h1 {
     text-align: left;
@@ -111,6 +114,7 @@ header {
 #about-desciption p {
     letter-spacing: 1.5px;
     line-height: 1.6em;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 #about-links {
     margin-top: 45px;
