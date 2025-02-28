@@ -13,8 +13,8 @@ for (let project of projectArray) {
                         <p>
                             ${project.description}
                         </p>
-                        <a href="${project.link}" target="_blank">View On Github</a>
                     </div>`;
 }
+//<a href="${project.link}" target="_blank">View On Github</a>
 
 document.getElementById("project-cards").innerHTML = projectCards;
