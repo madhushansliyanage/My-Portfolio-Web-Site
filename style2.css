@@ -171,6 +171,9 @@ hr{
     grid-gap: 15px;
     grid-auto-rows: minmax(400px, auto);
 }
+.project {
+    cursor: pointer;
+}
 .project img {
     width: 100%;
 }

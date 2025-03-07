@@ -2,7 +2,8 @@ import { projectArray } from './projects.js';
 
 console.log("Welcome to my Profile");
 
-console.log(projectArray);
+//displaying projects
+// console.log(projectArray);
 
 let projectCards = "";
 
@@ -18,3 +19,23 @@ for (let project of projectArray) {
 //<a href="${project.link}" target="_blank">View On Github</a>
 
 document.getElementById("project-cards").innerHTML = projectCards;
+
+
+
+//show popup project window
+let projects = document.querySelectorAll('div');
+console.log(projects);
+
+projects.forEach(element => {
+    element.addEventListener('click',(event)=>{
+        console.log("you clicked project:",element);
+        
+    })
+});
+
+
+
+//hide popup project window
+document.getElementById('popup-cancelbtn').addEventListener("click",(event)=>{
+    document.getElementById('pop-project-card').style.visibility="hidden";
+})
