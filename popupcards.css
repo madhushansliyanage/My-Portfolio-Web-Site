@@ -1,15 +1,20 @@
 #pop-project-card{
-    background-color: red;
+    /* background: linear-gradient(135deg, #FF6347, #FF4500, #FF6B81); */
+    background: linear-gradient(135deg,#FFDAB9,#FFA07A, #fe8873);
+
     border-radius: 25px;
     padding: 25px;
     width: 80%;
     margin: auto;
     height: 70%;
+    overflow: auto;
 
     position:fixed;
     top: 15%;
     left: 10%;
     visibility: hidden;
+
+    box-shadow: 0 0 500px black;
 }
 
 #popup-cancelbtn{
@@ -21,4 +26,8 @@
 
 #popup-cancelbtn:hover{
     cursor:pointer;
+}
+
+#pop-project-card img{
+    width: 100%;
 }

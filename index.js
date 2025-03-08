@@ -9,33 +9,44 @@ let projectCards = "";
 
 for (let project of projectArray) {
     projectCards += `<div class="project light-color-card">
-                        <h3>${project.title}</h3>
                         <img src="images/projectImages/${project.id}/cover.png" alt="">
-                        <p>
-                            ${project.description}
-                        </p>
+                        <h3>${project.title}</h3>
                     </div>`;
 }
 //<a href="${project.link}" target="_blank">View On Github</a>
 
 document.getElementById("project-cards").innerHTML = projectCards;
 
-
-
 //show popup project window
-let projects = document.querySelectorAll('div');
-console.log(projects);
+let projects = Array.from(document.getElementsByClassName('project')); //convert to an array
+// console.log(projects);
 
-projects.forEach(element => {
-    element.addEventListener('click',(event)=>{
-        console.log("you clicked project:",element);
-        
-    })
-});
+for (let projectIdx in projects){
+    projects[projectIdx].addEventListener('click',()=>{
+        // console.log(projects[projectIdx]);
+        let popupWindow = document.getElementById('pop-project-card');
+        popupWindow.style.visibility="visible";
+        popupWindow.insertAdjacentHTML('beforeend',popupContentCreator(projectIdx));
+    });
+}
 
+const popupContentCreator = (idx) => {
+    return `<div id="dynamic-content">
+                <h3>${projectArray[idx].title}</h3>
+                <img src="images/projectImages/${projectArray[idx].id}/cover.png" alt="">
+                <p>${projectArray[idx].description}</p>
+            </div>`;
+};
 
 
 //hide popup project window
-document.getElementById('popup-cancelbtn').addEventListener("click",(event)=>{
-    document.getElementById('pop-project-card').style.visibility="hidden";
-})
+document.getElementById('popup-cancelbtn').addEventListener("click", () => {
+    let popupWindow = document.getElementById('pop-project-card');
+    popupWindow.style.visibility = "hidden";
+    
+    // Remove only dynamically added content
+    let dynamicContent = document.getElementById('dynamic-content');
+    if (dynamicContent) {
+        dynamicContent.remove();
+    }
+});

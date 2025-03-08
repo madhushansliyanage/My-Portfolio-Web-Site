@@ -208,3 +208,12 @@ footer {
     padding: 50px 0px 15px 0px;
     text-align: center;
 }
+
+#navigUp{
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    border-radius: 50%;
+    background-color: tomato;
+    box-shadow: 0 0 10px black;
+}
