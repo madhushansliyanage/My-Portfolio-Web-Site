@@ -5,6 +5,37 @@ console.log("Welcome to my Profile");
 //displaying projects
 // console.log(projectArray);
 
+//refresh the page onclicking the name
+document.getElementById('MyName').addEventListener('click',()=>{location.assign("index.html")})
+
+//smooth navigation up 
+document.getElementById('navigUp').addEventListener('click',(event)=>{
+    event.preventDefault();// Preventing the default anchor click behavior
+    // document.getElementById('about').scrollIntoView({behavior:'smooth'}) 
+    document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
+});
+document.getElementById('aboutNavBtn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    document.getElementById('about').scrollIntoView({behavior:'smooth'})
+});
+document.getElementById('educationNavBtn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    document.getElementById('education').scrollIntoView({behavior:'smooth'})
+});
+document.getElementById('skillsNavBtn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    document.getElementById('skills').scrollIntoView({behavior:'smooth'})
+});
+document.getElementById('projectsNavBtn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    document.getElementById('projects').scrollIntoView({behavior:'smooth'})
+});
+document.getElementById('contactNavBtn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    document.getElementById('contact').scrollIntoView({behavior:'smooth'})
+});
+
+
 let projectCards = "";
 
 for (let project of projectArray) {

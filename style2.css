@@ -14,8 +14,8 @@ body {
 }
 /* all containers sibilings to header */
 header~.container {
-    margin-top: 120px;
-    margin-bottom: 120px;
+    padding-top: 120px;
+    padding-bottom: 20px;
 }
 /* light-color-card div container */
 .light-color-card {
@@ -51,6 +51,7 @@ header {
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin: 10px 20px 10px 0px;
+    cursor: pointer;
 }
 
 
@@ -168,8 +169,8 @@ hr{
 #project-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    grid-auto-rows: minmax(400px, auto);
+    grid-gap: 20px;
+    grid-auto-rows: minmax(300px, auto);
 }
 .project {
     cursor: pointer;
@@ -209,6 +210,7 @@ footer {
     text-align: center;
 }
 
+/* Navigate to up button */
 #navigUp{
     position: fixed;
     bottom: 50px;
@@ -216,4 +218,5 @@ footer {
     border-radius: 50%;
     background-color: tomato;
     box-shadow: 0 0 10px black;
+    cursor: pointer;
 }
