@@ -28,6 +28,17 @@ const project2 = {
     link: `https://github.com/madhushansliyanage/Jobs-Advert-site`
 }
 
+const project3 = {
+    title: "Job Advert Website",
+    id: "jaw",
+    image: [],
+    description: `Developed a Job Advert Website as a group project to showcase skills in HTML, CSS, and JavaScript. 
+    The website allows users to browse job listings with a structured UI. 
+    The most exciting part was designing and implementing a hardcoded side panel from scratch by me, which strengthened my understanding of frontend development and UI structuring. 
+    This project also improved my skills in UI design and collaboration.
+    Technologies Used: HTML, CSS, JavaScript`,
+    link: `https://github.com/madhushansliyanage/Jobs-Advert-site`
+}
 const projectArray = new Array(project1, project2);
 
 export { projectArray };
