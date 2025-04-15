@@ -45,8 +45,49 @@ const project3 = {
     This project enhanced my skills in Java programming, database management, and system design, while also improving my ability to work on team-based software development.
 
     Technologies Used: Java, MySQL`,
-    link: `https://github.com/madhushansliyanage/LMS-in-Java`
+    link: `https://github.com/madhushansliyanage/projectLMS`
 }
-const projectArray = new Array(project1, project2,project3);
+
+const project4 = {
+    title:"Pharmacy Management System",
+    id: "pms",
+    image: [],
+    description:"",
+    link:""
+}
+
+const project5 = {
+    title:"BidZone",
+    id: "bz",
+    image: [],
+    description:"",
+    link:""
+}
+
+const project6 = {
+    title:"Apparel Management System",
+    id: "ams",
+    image: [],
+    description:"",
+    link:""
+}
+
+const project7 = {
+    title:"Data Warehouse Project", 
+    id: "pms",
+    image: [],
+    description:"",
+    link:""
+}
+
+const project8 = {
+    title:"Advanced DBMS - Inventory System",
+    id: "pms",
+    image: [],
+    description:"",
+    link:""
+}
+
+const projectArray = new Array(project1, project2,project3,project4,project5,project6,project7,project8);
 
 export { projectArray };
