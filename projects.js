@@ -60,8 +60,13 @@ const project5 = {
     title:"BidZone",
     id: "bz",
     image: [],
-    description:"",
-    link:""
+    description:`BID Zone is a web-based auction platform. The system allows users to register, log in, browse auction listings, place bids, and view their past bids and payment history. The backend logic is handled using Spring Boot, ensuring a robust and maintainable architecture with RESTful APIs and clean separation of concerns.
+    Through this project, I gained hands-on experience with Object-Relational Mapping (ORM), design patterns, and building a full-stack application from scratch.
+    Technologies Used:- 
+    Spring Boot (REST APIs, Business Logic),
+    HTML, CSS, JavaScript (Frontend),
+    MySQL (Database)`,
+    link:"https://github.com/madhushansliyanage/BiddingSystem-BidZone"
 }
 
 const project6 = {
@@ -88,6 +93,6 @@ const project8 = {
     link:""
 }
 
-const projectArray = new Array(project1, project2,project3,project4,project5,project6,project7,project8);
+const projectArray = new Array(project1, project2,project3,project5,project6);
 
 export { projectArray };

@@ -69,6 +69,7 @@ const popupContentCreator = (idx) => {
                 <h3>${projectArray[idx].title}</h3>
                 <img src="images/projectImages/${projectArray[idx].id}/cover.png" alt="">
                 <p>${projectArray[idx].description}</p>
+                <a href="${projectArray[idx].link}" target="_blank">View on GitHub</a>
             </div>`;
 };
 
