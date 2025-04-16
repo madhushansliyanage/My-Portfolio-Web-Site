@@ -73,8 +73,18 @@ const project6 = {
     title:"Apparel Management System",
     id: "ams",
     image: [],
-    description:"",
-    link:""
+    description:`Smart Apparel is a web-based management system built for a manufacturing apparel company to streamline and digitalize internal operations. The system replaces manual workflows with an all-in-one solution tailored to the company's functional needs. The project developed with another 3 members.
+    Key Features:--
+    User Management (CEO, HR Manager, Accountant, etc.)
+    Attendance and Salary Management
+    Order and Inventory Management
+    Accounts Handling and Report Generation
+    Technologies Used:--
+    ,Spring Boot (REST APIs, Business Logic)
+    ,React.js (Frontend)
+    ,MySQL (Database)
+`,
+    link:"https://github.com/madhushansliyanage/SmartApparel-Group_08-Frontend"
 }
 
 const project7 = {
@@ -88,6 +98,14 @@ const project7 = {
 const project8 = {
     title:"Advanced DBMS - Inventory System",
     id: "pms",
+    image: [],
+    description:"",
+    link:""
+}
+
+const project9 = {
+    title:"Portfolio Web Site",
+    id: "portfolio",
     image: [],
     description:"",
     link:""
