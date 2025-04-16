@@ -6,35 +6,38 @@ console.log("Welcome to my Profile");
 // console.log(projectArray);
 
 //refresh the page onclicking the name
-document.getElementById('MyName').addEventListener('click',()=>{location.assign("index.html")})
+document.getElementById('MyName').addEventListener('click', () => { location.assign("index.html") })
 
 //smooth navigation up 
-document.getElementById('navigUp').addEventListener('click',(event)=>{
+document.getElementById('navigUp').addEventListener('click', (event) => {
     event.preventDefault();// Preventing the default anchor click behavior
     // document.getElementById('about').scrollIntoView({behavior:'smooth'}) 
     document.querySelector('#about').scrollIntoView({ behavior: 'smooth' });
 });
-document.getElementById('aboutNavBtn').addEventListener('click',(event)=>{
+document.getElementById('aboutNavBtn').addEventListener('click', (event) => {
     event.preventDefault();
-    document.getElementById('about').scrollIntoView({behavior:'smooth'})
+    document.getElementById('about').scrollIntoView({ behavior: 'smooth' })
 });
-document.getElementById('educationNavBtn').addEventListener('click',(event)=>{
+document.getElementById('educationNavBtn').addEventListener('click', (event) => {
     event.preventDefault();
-    document.getElementById('education').scrollIntoView({behavior:'smooth'})
+    document.getElementById('education').scrollIntoView({ behavior: 'smooth' })
 });
-document.getElementById('skillsNavBtn').addEventListener('click',(event)=>{
+document.getElementById('skillsNavBtn').addEventListener('click', (event) => {
     event.preventDefault();
-    document.getElementById('skills').scrollIntoView({behavior:'smooth'})
+    document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })
 });
-document.getElementById('projectsNavBtn').addEventListener('click',(event)=>{
+document.getElementById('projectsNavBtn').addEventListener('click', (event) => {
     event.preventDefault();
-    document.getElementById('projects').scrollIntoView({behavior:'smooth'})
-});
-document.getElementById('contactNavBtn').addEventListener('click',(event)=>{
-    event.preventDefault();
-    document.getElementById('contact').scrollIntoView({behavior:'smooth'})
+    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' })
 });
 
+let contactBtns = document.getElementsByClassName('contactNavBtn')
+for (let btn of contactBtns) {
+    btn.addEventListener('click', (event) => {
+        event.preventDefault();
+        document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })
+    });
+}
 
 let projectCards = "";
 
@@ -52,12 +55,12 @@ document.getElementById("project-cards").innerHTML = projectCards;
 let projects = Array.from(document.getElementsByClassName('project')); //convert to an array
 // console.log(projects);
 
-for (let projectIdx in projects){
-    projects[projectIdx].addEventListener('click',()=>{
+for (let projectIdx in projects) {
+    projects[projectIdx].addEventListener('click', () => {
         // console.log(projects[projectIdx]);
         let popupWindow = document.getElementById('pop-project-card');
-        popupWindow.style.visibility="visible";
-        popupWindow.insertAdjacentHTML('beforeend',popupContentCreator(projectIdx));
+        popupWindow.style.visibility = "visible";
+        popupWindow.insertAdjacentHTML('beforeend', popupContentCreator(projectIdx));
     });
 }
 
@@ -66,6 +69,7 @@ const popupContentCreator = (idx) => {
                 <h3>${projectArray[idx].title}</h3>
                 <img src="images/projectImages/${projectArray[idx].id}/cover.png" alt="">
                 <p>${projectArray[idx].description}</p>
+                <a href="${projectArray[idx].link}" target="_blank">View on GitHub</a>
             </div>`;
 };
 
@@ -74,7 +78,7 @@ const popupContentCreator = (idx) => {
 document.getElementById('popup-cancelbtn').addEventListener("click", () => {
     let popupWindow = document.getElementById('pop-project-card');
     popupWindow.style.visibility = "hidden";
-    
+
     // Remove only dynamically added content
     let dynamicContent = document.getElementById('dynamic-content');
     if (dynamicContent) {
