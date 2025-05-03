@@ -78,18 +78,18 @@ const project6 = {
     User Management (CEO, HR Manager, Accountant, etc.)
     Attendance and Salary Management
     Order and Inventory Management
-    Accounts Handling and Report Generation
+    Accounts Handling and Report Generation.
     Technologies Used:--
     ,Spring Boot (REST APIs, Business Logic)
     ,React.js (Frontend)
-    ,MySQL (Database)
+    ,MySQL (Database).
 `,
     link:"https://github.com/madhushansliyanage/SmartApparel-Group_08-Frontend"
 }
 
 const project7 = {
     title:"Data Warehouse Project", 
-    id: "pms",
+    id: "datawarehouse",
     image: [],
     description:"",
     link:""
@@ -97,20 +97,21 @@ const project7 = {
 
 const project8 = {
     title:"Advanced DBMS - Inventory System",
-    id: "pms",
+    id: "adbms",
     image: [],
     description:"",
     link:""
 }
 
 const project9 = {
-    title:"Portfolio Web Site",
+    title:"Portfolio Website",
     id: "portfolio",
     image: [],
-    description:"",
-    link:""
+    description:`My personal Portfolio Website project that showcases my skills, experience, and projects as a developer. This website is designed to provide a seamless and responsive user experience across all devices, highlighting my work and making it easy for visitors to connect with me.
+    Technologies Used: HTML, CSS, JavaScript`,
+    link:"https://github.com/madhushansliyanage/My-Portfolio-Web-Site"
 }
 
-const projectArray = new Array(project1, project2,project3,project5,project6);
+const projectArray = new Array(project1, project2,project3,project5,project6,project9);
 
 export { projectArray };

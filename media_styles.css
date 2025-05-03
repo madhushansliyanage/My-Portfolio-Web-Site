@@ -56,6 +56,7 @@
 @media(max-width:500px){
     #project-cards {
         grid-template-columns: 1fr;
+        grid-gap: 40px;
     }
     #project-cards>.project:nth-child(odd){
         background-color: rgba(249, 232, 104, 0.495);
